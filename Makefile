@@ -6,7 +6,7 @@
 #    By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/13 13:16:04 by wmessmer          #+#    #+#              #
-#    Updated: 2022/11/14 14:45:55 by wmessmer         ###   ########.fr        #
+#    Updated: 2022/11/15 17:57:45 by wmessmer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ BONUS =	ft_lstnew.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
 		ft_lstadd_back.c \
-		ft_lstdelone.c  \
+		ft_lstdelone.c    \
 		ft_lstclear.c \
 		ft_lstiter.c \
 		ft_lstmap.c \

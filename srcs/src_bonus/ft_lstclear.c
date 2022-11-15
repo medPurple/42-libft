@@ -6,14 +6,20 @@
 /*   By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:47:00 by wmessmer          #+#    #+#             */
-/*   Updated: 2022/11/14 14:06:00 by wmessmer         ###   ########.fr       */
+/*   Updated: 2022/11/15 17:53:51 by wmessmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-    ft_lstdelone(*lst,del);
-    *lst = (*lst)->next;
+	t_list	*p;
+
+	while (*lst)
+	{
+		p = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = p;
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 11:02:35 by wmessmer          #+#    #+#             */
-/*   Updated: 2022/11/14 11:12:19 by wmessmer         ###   ########.fr       */
+/*   Updated: 2022/11/15 16:04:47 by wmessmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,6 @@
 
 void ft_lstadd_front(t_list **lst, t_list *new)
 {
-    if(!(lst))
-        return (NULL);
-    /*if(!(new))
-    {
-        new = *lst;
-        return(NULL);
-    }*/
-    new->next=*lst;
-    *lst = new;
+    new->next = *lst;
+	*lst = new;
 }

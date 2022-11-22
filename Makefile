@@ -6,57 +6,58 @@
 #    By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/13 13:16:04 by wmessmer          #+#    #+#              #
-#    Updated: 2022/11/15 17:57:45 by wmessmer         ###   ########.fr        #
+#    Updated: 2022/11/16 18:30:22 by wmessmer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = libft.a
 HEADER = libft.h
-SRCS =	ft_isalpha.c	\
-		ft_isdigit.c	\
-		ft_isalnum.c	\
-		ft_isdigit.c	\
-		ft_isascii.c	\
-		ft_isprint.c	\
-		ft_strlen.c	\
-		ft_memset.c	\
-		ft_bzero.c	\
-		ft_memcpy.c	\
-		ft_memmove.c	\
-		ft_strlcpy.c	\
-		ft_strlcat.c	\
-		ft_toupper.c	\
-		ft_tolower.c	\
-		ft_strchr.c	\
-		ft_strrchr.c	\
-		ft_strncmp.c	\
-		ft_memchr.c	\
-		ft_memcmp.c	\
-		ft_strnstr.c	\
-		ft_calloc.c	\
-		ft_strdup.c	\
-		ft_substr.c \
-		ft_strjoin.c \
-		ft_strtrim.c \
-		ft_split.c \
-		ft_itoa.c \
-		ft_striteri.c \
-		ft_putchar_fd.c \
-		ft_putstr_fd.c  \
-		ft_putendl_fd.c  \
-		ft_putnbr_fd.c \
-		ft_atoi.c \
+SRCS =		srcs/src_part1/ft_isalpha.c	\
+		srcs/src_part1/ft_isdigit.c	\
+		srcs/src_part1/ft_isalnum.c	\
+		srcs/src_part1/ft_isdigit.c	\
+		srcs/src_part1/ft_isascii.c	\
+		srcs/src_part1/ft_isprint.c	\
+		srcs/src_part1/ft_strlen.c	\
+		srcs/src_part1/ft_memset.c	\
+		srcs/src_part1/ft_bzero.c	\
+		srcs/src_part1/ft_memcpy.c	\
+		srcs/src_part1/ft_memmove.c	\
+		srcs/src_part1/ft_strlcpy.c	\
+		srcs/src_part1/ft_strlcat.c	\
+		srcs/src_part1/ft_toupper.c	\
+		srcs/src_part1/ft_tolower.c	\
+		srcs/src_part1/ft_strchr.c	\
+		srcs/src_part1/ft_strrchr.c	\
+		srcs/src_part1/ft_strncmp.c	\
+		srcs/src_part1/ft_memchr.c	\
+		srcs/src_part1/ft_memcmp.c	\
+		srcs/src_part1/ft_strnstr.c	\
+		srcs/src_part1/ft_calloc.c	\
+		srcs/src_part1/ft_strdup.c	\
+		srcs/src_part2/ft_substr.c \
+		srcs/src_part2/ft_strjoin.c \
+		srcs/src_part2/ft_strtrim.c \
+		srcs/src_part2/ft_split.c \
+		srcs/src_part2/ft_itoa.c \
+		srcs/src_part2/ft_striteri.c \
+		srcs/src_part2/ft_putchar_fd.c \
+		srcs/src_part2/ft_putstr_fd.c  \
+		srcs/src_part2/ft_putendl_fd.c  \
+		srcs/src_part2/ft_putnbr_fd.c \
+		srcs/src_part2/ft_atoi.c \
+		srcs/src_part2/ft_strmapi.c \
 		
-BONUS =	ft_lstnew.c \
-		ft_lstadd_front.c   \
-		ft_lstsize.c \
-		ft_lstlast.c \
-		ft_lstadd_back.c \
-		ft_lstdelone.c    \
-		ft_lstclear.c \
-		ft_lstiter.c \
-		ft_lstmap.c \
+BONUS =		srcs/src_bonus/ft_lstnew.c \
+		srcs/src_bonus/ft_lstadd_front.c   \
+		srcs/src_bonus/ft_lstsize.c \
+		srcs/src_bonus/ft_lstlast.c \
+		srcs/src_bonus/ft_lstadd_back.c \
+		srcs/src_bonus/ft_lstdelone.c    \
+		srcs/src_bonus/ft_lstclear.c \
+		srcs/src_bonus/ft_lstiter.c \
+		srcs/src_bonus/ft_lstmap.c \
 		
 
 OBJS	= ${SRCS:.c=.o}
@@ -71,7 +72,8 @@ $(NAME_BONUS) : ${OBJS_BONUS}
 
 all:	${NAME}
 
-bonus:	all ${NAME_BONUS}
+bonus:	${OBJS} ${OBJS_BONUS}
+	ar rc ${NAME} ${OBJS} ${OBJS_BONUS}
 
 clean :
 	/bin/rm -f ${OBJS} ${OBJS_BONUS}

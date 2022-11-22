@@ -6,23 +6,23 @@
 /*   By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:18:06 by wmessmer          #+#    #+#             */
-/*   Updated: 2022/11/14 12:41:21 by wmessmer         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:02:43 by wmessmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-    int i;
-    
-    if(!(lst))
-        return(0);
-    i = 0;
-    while(lst)
-    {
-        lst = lst->next;
-        i++;
-    }
-    return(i);
+	int	i;
+
+	if (!(lst))
+		return (0);
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }

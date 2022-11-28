@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/09 14:25:06 by wmessmer          #+#    #+#             */
-/*   Updated: 2022/11/13 15:22:46 by wmessmer         ###   ########.fr       */
+/*   Created: 2022/11/24 10:53:00 by wmessmer          #+#    #+#             */
+/*   Updated: 2022/11/24 15:40:13 by wmessmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isdigit(int c)
+int	ft_isdigit(int a)
 {
-	return (c >= '0' && c <= '9');
+	return (a >= '0' && a <= '9');
 }

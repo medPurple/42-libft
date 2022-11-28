@@ -6,7 +6,7 @@
 /*   By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:12:01 by wmessmer          #+#    #+#             */
-/*   Updated: 2022/11/13 15:55:48 by wmessmer         ###   ########.fr       */
+/*   Updated: 2022/11/24 11:24:54 by wmessmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	s = (char *)src;
 	d = (char *)dst;
 	i = 0;
+	if (s == NULL && d == NULL)
+		return (dst);
 	if (d > s)
 		while (len-- > 0)
 			d[len] = s[len];

@@ -6,7 +6,7 @@
 #    By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/13 13:16:04 by wmessmer          #+#    #+#              #
-#    Updated: 2022/11/16 18:30:22 by wmessmer         ###   ########.fr        #
+#    Updated: 2022/11/24 10:54:34 by wmessmer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,6 @@ HEADER = libft.h
 SRCS =		srcs/src_part1/ft_isalpha.c	\
 		srcs/src_part1/ft_isdigit.c	\
 		srcs/src_part1/ft_isalnum.c	\
-		srcs/src_part1/ft_isdigit.c	\
 		srcs/src_part1/ft_isascii.c	\
 		srcs/src_part1/ft_isprint.c	\
 		srcs/src_part1/ft_strlen.c	\
@@ -49,7 +48,7 @@ SRCS =		srcs/src_part1/ft_isalpha.c	\
 		srcs/src_part2/ft_atoi.c \
 		srcs/src_part2/ft_strmapi.c \
 		
-BONUS =		srcs/src_bonus/ft_lstnew.c \
+BONUS =	srcs/src_bonus/ft_lstnew.c \
 		srcs/src_bonus/ft_lstadd_front.c   \
 		srcs/src_bonus/ft_lstsize.c \
 		srcs/src_bonus/ft_lstlast.c \

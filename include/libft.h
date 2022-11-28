@@ -6,7 +6,7 @@
 /*   By: wmessmer <wmessmer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 17:22:58 by wmessmer          #+#    #+#             */
-/*   Updated: 2022/11/22 11:48:12 by wmessmer         ###   ########.fr       */
+/*   Updated: 2022/11/24 15:39:52 by wmessmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ typedef struct s_list
 
 /*part_1*/
 int			ft_isalpha(int c);
-int			ft_isdigit(int c);
+int			ft_isdigit(int a);
 int			ft_isalnum(int c);
 int			ft_isprint(int c);
 int			ft_isascii(int c);
@@ -46,7 +46,7 @@ char		*ft_strchr(const char *str, int dest);
 char		*ft_strrchr(const char *str, int dest);
 void		*ft_memchr(const void *mb, int sc, size_t size);
 int			ft_memcmp(const void *p1, const void *p2, size_t size );
-char	*ft_strnstr(const char *s1, const char *s2, size_t n);
+char		*ft_strnstr(const char *s1, const char *s2, size_t n);
 int			ft_atoi(const char *str);
 void		*ft_calloc( size_t count, size_t size);
 char		*ft_strdup(const char *src);

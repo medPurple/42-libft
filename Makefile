@@ -89,17 +89,17 @@ all:	${NAME}
 
 $(NAME) : ${OBJ}
 		@ ar rc ${NAME} ${OBJ} 
+		@echo "Compilation libft [OK]"
 	
 clean :
-	-@/bin/rm -f
+	@ rm -rf $(OBJ)
 
 fclean : clean
-	-@/bin/rm -f ${NAME}
-
+	@ rm -rf $(NAME)
 re : fclean all
 
 .c.o	:
-			$(CC) $(CFLAGS) -o $@ -c $<
+		@ $(CC) $(CFLAGS) -o $@ -c $<
 			
 .PHONY:	
 	all re clean fclean
